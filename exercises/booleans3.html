@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans Practice</title>
+  </head>
+   <body>
+     <button onclick="
+      playgame('heads')
+      ">heads</button>
+
+     <button onclick="
+     playgame('tails')
+
+     ">tails</button>
+
+
+    <script>
+
+      let playerMove =''
+
+     function playgame (guess){
+      playerMove = guess;
+   
+      const randomNumber= Math.random();
+
+      let result = '';
+     
+      if (randomNumber < 0.5){
+        result = 'heads';
+      } else if (randomNumber >= 0.5) {
+        result = 'tails';
+      }
+
+      const score = JSON.parse(localStorage.getItem('score')) || {
+        wins: 0,
+        losses: 0
+      };
+
+      if (playerMove === result) {
+        score.wins += 1;
+      } else {
+        score.losses += 1;
+      }
+
+      localStorage.setItem('score', JSON.stringify(score));
+
+      console.log(score);
+
+      if (playerMove === result){
+        console.log(`you chose ${playerMove} computer chose ${result} you win.`);
+      } else if (playerMove !== result) {
+        console.log(`you chose ${playerMove} computer chose ${result} you lose.`);
+      }
+              
+    }
+
+    </script>
+   </body>
+</html>
