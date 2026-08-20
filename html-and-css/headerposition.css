@@ -1,0 +1,55 @@
+.header{
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  height: 50px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.name{
+  font-weight: bold;
+  font-family: arial;
+  font-size: 13px;
+  margin-left: 5px;
+}
+.pic{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.add{
+  font-weight: bold;
+  background-color: #4A76E8;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 15px;
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.msg{
+  font-weight: bold;
+  background-color: rgb(212, 212, 212);
+  border-radius: 4px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}

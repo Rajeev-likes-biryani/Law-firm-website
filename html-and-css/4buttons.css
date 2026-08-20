@@ -1,0 +1,34 @@
+.stretch{
+    Background-color: green;
+    color:white;
+    padding: 10px 30px;
+    border:none;
+    margin-left: 10px;
+    
+}
+.stretch:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.enlarge{
+    background-color: blue;
+    color:white;
+    margin-left: 20px;
+    border: none;
+    padding: 10px 30px;
+}
+.enlarge:hover{
+    padding: 10px 50px;
+    transition: 0.3s;
+}
+.movement{
+    background-color: red;
+    color:white;
+    margin-left: 10px;
+    border: none;
+    padding: 10px 30px;
+}
+.movement:active{
+    transform: translate(4px, 4px);
+}

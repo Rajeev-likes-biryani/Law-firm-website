@@ -1,0 +1,44 @@
+.new{
+    color: orange;
+    font-weight:bold;
+    font-family: Arial;
+    font-size: 15px;
+    text-align: center;
+    margin: 4px 0px;
+}
+.macbook{
+    color: black;
+    font-weight:bold;
+    font-family: Arial;
+    font-size: 30px;
+    text-align:center;
+    margin: 0px 0px;
+}
+.Supercharged{
+    color:black;
+    font-weight: bold;
+    font-family:Arial;
+    font-size: 50px;
+    text-align:center;
+    margin: 4px 0px;
+}
+.dollar{
+    color: black;
+    font-family: Arial;
+    font-size: 15px;
+    text-align:center;
+    margin: 10px 0px;
+}
+.buy{
+    background-color: rgb(0, 119, 255);
+    color: white;
+    font-family: Arial;
+    margin: 0 auto;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 13px;
+    cursor: pointer;
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}

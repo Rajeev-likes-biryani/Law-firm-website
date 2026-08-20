@@ -1,0 +1,58 @@
+.Tamoha{
+    font-weight: bold;
+    font-family: Tamoha;
+    font-size: 30px;
+}
+.deals{
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+.sales{
+    font-family: Arial;
+    font-style:italic;
+    color: red;
+    margin-top: 0px;
+}
+.course{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 20px;
+    Margin-bottom: 8px;
+}
+.pro{
+    font-family: Verdana;
+    font-size: 17px;
+    Margin-top: 0px;
+    color: grey;
+}
+.skills{
+    font-family: Verdana;
+    font-size: 17px;
+    Margin-top: 25px;
+    width: 300px;
+}
+.start{
+    background-color: green;
+    color: white;
+    font-family: Verdana;
+    Margin-top: 0px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.shopping{
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.apple{
+    font-family: Arial;
+    font-size: 18px;
+    margin-left: 71px;
+    margin-top: 18px;
+}
+

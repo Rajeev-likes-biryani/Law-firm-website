@@ -1,0 +1,53 @@
+
+.uber{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* top/bottom 15px, left/right 20px */
+    cursor: pointer;
+}
+.amazon{
+    background-color: rgb(255,216,20);
+    color: black;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+.github{
+    background-color: rgb(46,164,79);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.download{
+    background-color: white;
+    color: rgb(108,117,125);
+    border: 1px solid rgb(108,117,125);
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.uber:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.amazon:hover{
+    background-color: rgb(240, 201, 5);
+    transition: 0.3s;
+}
+.github:hover{
+    box-shadow: 4px 4px 6px rgba(0, 0, 10, 0.279);
+}
+.download:hover{
+    background-color: rgb(108,117,125);
+    color: white;
+    transition: 0.3s;
+}

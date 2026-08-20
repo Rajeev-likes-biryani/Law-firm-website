@@ -1,0 +1,80 @@
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: arial;
+}
+
+
+.container{
+    height: 300px;
+    width: 400px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+}
+
+.inbox{
+    margin-top: 16px;
+    margin-left: 10px;
+    padding-top: 8px;
+}
+
+
+.all{
+    font-size: 13px;
+    color: grey;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.info + .info {
+    margin-top: 25px;
+}
+
+
+.cool{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.pic{
+    width: 40px;
+    margin-left: 8px;
+}
+
+.description{
+    width: 360px;
+    height: 55px;
+    margin-left: 8px;
+}
+.promotiontime{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 12px;
+
+}
+.promotion{
+    font-weight: bold;
+}
+
+.time{
+    font-size: 12px;
+    color: grey;
+}
+
+.sale{
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.ad{
+    color: grey;
+}

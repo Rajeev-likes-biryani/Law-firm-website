@@ -1,0 +1,17 @@
+.cool{
+    width: 200px;
+    border-radius: 10px;
+}
+.coolart{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.verycool{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}

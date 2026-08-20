@@ -1,0 +1,46 @@
+.container{
+  position: relative;
+  display: inline-block;
+}
+
+.clothes{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.sale{
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: arial;
+  font-size: 13px;
+}
+
+.buy{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.cart{
+  padding: 5px 10px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 13px;
+  background-color: white;
+}
+
