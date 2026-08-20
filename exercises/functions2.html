@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions practice2</title>
+  </head>
+  <body>
+    <script>
+      function convertToFahrenheit(celsius) {
+        return (celsius*9/5)+32
+      }
+
+
+      function convertToCelsius (Fahrenheit) {
+        return `${Math.round ((Fahrenheit-32)*5/9)}`
+      }
+  
+      function convertTemperature (Degrees, Unit) {
+        
+        if (Unit === 'C') {
+          const result = convertToFahrenheit(Degrees);
+          return `${result} F`
+        } else if (Unit === 'F') {
+          const result = convertToCelsius(Degrees);
+          return `${result} C`
+      } }
+
+      console.log(`The temperature is ${convertTemperature (40,'C')}`)
+
+      console.log(`The temperature is ${convertTemperature (104,'F')}`)
+     
+
+
+    </script>
+  </body>
+</html>

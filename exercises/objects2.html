@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Objects-practice-2
+    </title>
+  </head>
+  <body>
+    <script>
+      const product2 = {
+        name : 'Badminton Racket',
+        price : 3000 ,
+      }
+
+      const product3 = {
+        name : 'Badminton Racket',
+        price : 3000 ,
+      }
+       
+    function similarityCheck (product1 , product2) {
+       if (typeof product1 !== 'object' || typeof product2 !== 'object' || !product1 || !product2 ) {
+          return 'Please input a valid value'
+        } else if (product1.name === product2.name && product1.price === product2.price) {
+            return 'Both products are the same';
+        } else {
+            return 'Not the same product';
+        }
+    }
+
+    console.log(similarityCheck(product2 , product3))
+
+    </script>
+  </body>
+</html>

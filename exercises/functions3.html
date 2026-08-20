@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <title>Length converter</title>
+    </head>
+  </head>
+  <body>
+    <script>
+      function kilometersToMiles (Km){
+          return Km/1.6
+      }
+      function milesToKilometers (Miles){
+        return (1.6*Miles)/1
+      }
+      function milesToFoot (Miles){
+        return Miles*5280
+      }
+
+      function kilometersToFoot (Km){
+          return Km*3280.84
+      }
+
+      function footToMiles (foot){
+          return foot/5280
+      }
+
+      function footToKilometers (foot){
+          return foot/3280.84
+      }
+
+    function convertLength (Length , From , To ) {
+        if (From === 'km' && To === 'Miles') {
+          const result = kilometersToMiles(Length);
+          return `from ${Length}${From} is ${result}Miles`
+        } else if (From === 'Miles' && To === 'km') {
+          const result = milesToKilometers(Length);
+          return `from ${Length}${From} is ${result}Km`
+        } else if (From === 'Miles' && To === 'ft') {
+          const result = milesToFoot(Length);
+          return `from ${Length}${From} is ${result}Ft`
+        } else if (From === 'km' && To === 'ft') {
+          const result = kilometersToFoot(Length);
+          return `from ${Length}${From} is ${result}Ft`
+        } else if (From === 'ft' && To === 'Miles') {
+          const result = footToMiles(Length);
+          return `from ${Length}${From} is ${result}Miles`
+        }  else if (From === 'ft' && To === 'km') {
+          const result = footToKilometers(Length);
+          return `from ${Length}${From} is ${result}km` 
+        } else if (From !== 'km' && From !== 'Miles' && From !== 'ft') {
+          return `Invalid unit: ${From}`;
+        } else if (To !== 'km' && To !== 'Miles' && To !== 'ft') {
+          return `Invalid unit: ${To}`;
+        }
+        }
+                 
+
+        console.log(`The converted length ${convertLength(60 , 'Miles' , 'km')}`)
+        console.log(`The final conversion ${convertLength(60 , 'km' , 'Miles')}`)
+        console.log(`The final conversion ${convertLength(5 , 'km' , 'ft')}`)
+        console.log(`The final conversion ${convertLength(5 , 'Miles' , 'ft')}`)
+        console.log(`${convertLength(5 , 'ft' , 'lbs')}`)
+    </script>
+  </body>
+</html>

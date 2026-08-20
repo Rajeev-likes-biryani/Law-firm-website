@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <button onclick="
+      console.log(`Cart quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick="
+      updateCartQuantity(1);
+      cartQuantityDisplay();
+    ">Add to Cart</button>
+
+    <button onclick="
+      updateCartQuantity(2);
+      cartQuantityDisplay();
+    ">+2</button>
+
+    <button onclick="
+      updateCartQuantity(3);
+      cartQuantityDisplay();
+    ">+3</button>
+
+    <button onclick="
+      updateCartQuantity(4);
+      cartQuantityDisplay();
+    ">+4</button>
+
+    <button onclick="
+      updateCartQuantity(5);
+      cartQuantityDisplay();
+    ">+5</button>
+
+    <button onclick="
+      updateCartQuantity(-1);
+      cartQuantityDisplay();
+    ">Remove from cart</button>
+
+    <button onclick="
+      updateCartQuantity(-2);
+      cartQuantityDisplay();
+    ">-2</button>
+
+    <button onclick="
+      updateCartQuantity(-3);
+      cartQuantityDisplay();
+    ">-3</button>
+
+    <button onclick="
+      cartQuantity = 0;
+      console.log('Cart was reset.');
+      console.log(`Cart quantity: ${cartQuantity}`);
+      cartQuantityDisplay();
+    ">Reset Cart</button>
+
+    <p class="js-quantity-holder"></p>
+
+    <script>
+      let cartQuantity = 0;
+      const savedQuantity = localStorage.getItem('quantity');
+      if (savedQuantity !== null) {
+        cartQuantity = Number(savedQuantity) || 0;
+      }
+
+      function updateCartQuantity(change) {
+        if (cartQuantity + change > 10) {
+          alert('The cart is full');
+          return;
+        }
+
+        if (cartQuantity + change < 0) {
+          alert('Not enough items in the cart');
+          return;
+        }
+
+        cartQuantity += change;
+        localStorage.setItem('quantity', cartQuantity);
+      }
+
+      function cartQuantityDisplay() {
+        const cartQuantityDisplay = document.querySelector('.js-quantity-holder');
+        cartQuantityDisplay.innerHTML = `Cart quantity: ${cartQuantity}`;
+      }
+
+      cartQuantityDisplay();
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM-practice-3</title>
+  </head>
+  <body>
+
+   <input placeholder="Start typing" class="js-value-holder" onkeyup="onKeyUpPractice()">
+
+
+   <p class="js-value-taker"></p>
+
+    <script>
+     function onKeyUpPractice() {
+       const paraElem = document.querySelector('.js-value-taker');
+       const inputElem = document.querySelector('.js-value-holder');
+
+       paraElem.innerHTML = inputElem.value;
+     }
+    </script>
+  </body>
+</html>

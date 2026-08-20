@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Objects-practice-1
+    </title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        name : 'Basketball',
+        price : 2095 ,
+      }
+      console.log(product);
+
+      product.price += 500;
+      console.log(product.price);
+
+      product['delivery-time'] = '3-days';
+
+      console.log(product);
+
+      const product2 = {
+        name : 'Badminton Racket',
+        price : 3000 ,
+      }
+
+      const product3 = {
+        name : 'Shuttlecock',
+        price : 2000 ,
+      }
+
+      function priceComparison (product1 , product2) {
+        if (typeof product1 !== 'object' || typeof product2 !== 'object' || !product1 || !product2 ) {
+          console.log('Please input a valid value');
+          return;
+        } else if (product1['price'] > product2['price']) {
+          return product1;
+        } else if (product2['price'] > product1['price']) {
+          return product2;
+        } 
+      }
+
+      console.log(priceComparison(product2, product3));
+
+
+    </script>
+  </body>
+</html>
