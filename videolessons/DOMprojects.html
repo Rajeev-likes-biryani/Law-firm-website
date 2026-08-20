@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dom projects</title>
+    <link rel="stylesheet" href= "../css-files-for-videolessons/DOMprojects.css">
+  </head>
+  <body>
+    <p>
+      YouTube Subscribe Button
+    </p>
+    <button class="js-subscribe-button"
+    onclick = "
+     subscribe ();
+    ">Subscribe</button>
+
+
+   <p class="js-shipping-calculator">Amazon shipping calculator</p>
+
+   <p>Orders under $40 = +$10 shipping.</p>
+
+   <p>Orders over $40 = FREE shipping.</p>
+
+   <input placeholder="Cost of order" class="js-value-holder" onkeydown="
+    handleCostKeyDown(event);
+   ">
+
+   <button class="calculation" onclick="
+   calculateTotal();
+   ">calculate</button>
+
+    <p class="js-final-result"></p>
+
+    <script>
+      function handleCostKeyDown (event) { 
+        if (event.key === 'Enter') {
+    calculateTotal();
+      }
+    }
+
+    function calculateTotal() {
+      const inputElem = document.querySelector('.js-value-holder');
+      const cost = Number(inputElem.value * 100);
+
+      let result = '';
+
+      if (cost < 4000) {
+        result = `${(cost + 1000)/100}`;
+      } else {
+        result = `${cost/100}`;
+      }
+
+      document.querySelector('.js-final-result').innerHTML = result;
+    }
+
+
+      function subscribe () {
+    const buttonElem = document.querySelector('.js-subscribe-button');
+    
+    if (buttonElem.innerText === 'Subscribe') {
+      buttonElem.innerHTML = 'Subscribed';
+    } else {
+       buttonElem.innerHTML = 'Subscribe';
+    }
+      }
+     
+    </script>
+  </body>
+</html>
