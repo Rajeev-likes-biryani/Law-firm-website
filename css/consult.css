@@ -1,0 +1,569 @@
+body{
+    margin: 0;
+    overflow-x:hidden
+}
+
+.page-1 {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-image: url("../2nd-page-pics/Sky%20towers%20Karachi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.page-1-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.page-1-heading{
+  font-size: 68px;
+  font-family: Playfair Display, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+
+  animation: page-1 ease-in 1s both;
+}
+
+@keyframes page-1{
+  from{
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+.nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+}
+
+.navigation-bar {
+  display: flex;
+  flex:1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 20;
+  background-color: rgba(0,0,0,0);
+  opacity: 1;
+  align-items: center;
+  box-sizing: border-box;
+  animation: navigation-bar linear 1s 1 both;
+  animation-timeline: scroll();
+  animation-range: 160px 360px;
+}
+
+@keyframes navigation-bar {
+    from{
+        background-color: rgba(0,0,0,0);
+    }
+    to{
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.logo{
+  display: flex;
+  width: 400px;
+  padding-left: 130px;
+  min-width: 200px;
+}
+
+.intro-page-logo{
+  color: white;
+  text-decoration: none;
+  font-family: Playfair Display,sans-serif;
+  font-weight: 600;
+  color:#2c4a9e;
+  font-size: 24px;
+}
+
+.navigating{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-right: 130px;
+  min-width: 300px;
+}
+
+.navigation{
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 17px;
+  font-family: Montserrat,sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+  text-decoration: none;
+
+  animation: header-material linear 0.5s 1 both;
+}
+
+.intro-page-consult{
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 17px;
+  font-family: Montserrat,sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.intro-page-consult:hover{
+    color:#2c4a9e;
+  transition: 0.4s ease;
+}
+
+@keyframes header-material {
+  
+    from{
+       transform: translateY(-100px);
+    } to {
+      transform: translateY(0px);
+    }
+}
+
+.services{
+  position: absolute;
+  top: calc(100% + 10px);
+  right: -50;
+  width:200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 5px;
+  z-index: 10000;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+.intro-page-law-type{
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.intro-page-law-type:hover{
+  color:#2c4a9e;
+  transition: 0.4s ease;
+}
+
+
+.navigation:hover{
+  color:#2c4a9e;
+  transition: 0.4s ease;
+}
+
+.navigation:hover .services{
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.5s ease;
+}
+
+
+
+.divider{
+  position:  fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 1px;
+  background: transparent;
+  margin-left: 121px; 
+  margin-right: 121px;
+  opacity: 1;
+  min-width: 500px;
+
+  animation: divider linear 1s 1 both;
+  animation-timeline: scroll();
+  animation-range: 120px 360px;
+}
+
+.divider::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: white;
+  animation: divider-2 linear 0.5s both;
+}
+
+@keyframes divider {
+    from{
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+@keyframes divider-2 {
+  from{
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+
+.consult-page{
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 140px;
+  padding-bottom: 70px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f0f0f3;
+  box-sizing: border-box;
+}
+
+.consult-page-all-area{
+  margin-left: 126px;
+  margin-right: 126px;
+}
+
+.consult-page-all-content{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 70px;
+}
+
+.consult-page-content{
+  display: grid;
+  grid-template-columns: 49px 1fr;
+
+  animation: consult-page-content linear both;
+  animation-timeline: view();
+  animation-range: 10% 40%;
+}
+
+@keyframes consult-page-content{
+  from{
+    transform: translateY(-50px);
+    opacity: 0;
+  } to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.consult-page-transition{
+    animation: consult-page-content linear 1s both;
+}
+
+.consult-page-line{
+  width: 40px;
+  height: 2px;
+  background-color: #2c4a9e;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+.consult-page-heading{
+  font-family: Playfair Display,sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: -1px;  
+}
+
+.consult-page-sub-heading{
+  font-family: Montserrat,sans-serif;
+  font-weight: 200;
+  color: #4A4A4A;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.number-container{
+  margin-bottom: 0px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.consult-page-phone{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.consult-phone{
+  font-family: Montserrat,sans-serif;
+  font-weight: 200;
+  color: black;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  display: inline-block
+}
+
+.e-mail{
+  font-family: Montserrat,sans-serif;
+  font-weight: 200;
+  color: black;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block
+}
+
+.consult-page-form{
+  background-color: white;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  animation: result-page-content-form linear both;
+  animation-timeline: view();
+  animation-range: 10% 40%;
+}
+
+@keyframes result-page-content-form{
+  from{
+    transform: translateY(200px);
+    opacity: 0;
+  } to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.consult-page-form-content{
+    animation: result-page-content-form linear 1s both;  
+}
+
+
+.consult-page-form-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 28px;
+  grid-row-gap: 48px;
+  box-sizing: border-box;
+}
+
+.form-card{
+  width: 100%;
+}
+
+label{
+  color: black;
+  font-family: Montserrat,sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+}
+
+input{
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #4A4A4A;
+  font-family: Montserrat,sans-serif;
+  font-weight: 200px;
+}
+
+input:hover{
+  border-bottom-width: 1px;
+  border-color: #2c4a9e;
+  transition: 0.4s ease;
+}
+
+input:focus {
+  border-color: #2c4a9e;
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.form-card-big{
+  grid-column: 1 / -1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.consult-page-message{
+  margin-top: 20px;
+  padding: 20px 50px;
+  background-color:#2c4a9e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: sans-serif;
+  border: none;
+  font-weight: bold;
+}
+
+.footer{
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 0;
+}
+
+.footer-all-area{
+  margin-right: 147px;
+  margin-left: 147px;
+}
+
+.footer-all-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.footer-company-logo{
+  color: white;
+  font-family: Playfair Display,sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  display: block;
+}
+
+.disclaimer{
+  color: #4A4A4A;
+  font-family: Montserrat,sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  display: block;
+}
+
+.footer-content-left-section-text{
+  color: white;
+  font-family: Montserrat,sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  display: block;
+}
+
+.content-middle-section{
+  text-align: center;
+}
+
+.small-explore{
+  color: #4A4A4A;
+  font-family: Montserrat,sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  display: block;
+}
+
+.footer-link{
+  color: white;
+  font-family: Montserrat,sans-serif;
+  font-weight: 200px;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.content-right-section{
+   text-align: center;
+}
+
+.small-connect{
+  color: #4A4A4A;
+  font-family: Montserrat,sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  display: block;
+  margin-top: 0;
+}
+
+.footer-gmail{
+  color: #2c4a9e;
+  font-family: Montserrat,sans-serif;
+  font-weight: 200px;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-number{
+  color: #2c4a9e;
+  font-family: Montserrat,sans-serif;
+  font-weight: 200px;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-final-touches{
+  padding-top: 20px;
+}
+
+.final-line{
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+.signature{
+  color: #2c4a9e;
+  font-family: Montserrat,sans-serif;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
