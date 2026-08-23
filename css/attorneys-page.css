@@ -383,6 +383,12 @@ body{
   margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  color:#2c4a9e;
+  transition: 0.4s ease;
 }
 
 .content-right-section{
