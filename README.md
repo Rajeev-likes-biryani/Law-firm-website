@@ -1,3 +1,18 @@
+<p align="center">The path to making a website on my own</p>
+1.) Learned Html and Css. But what did I even learn? well...
 
+- Html and css basics
+- animations transitions and transformations
+- Css display properties
+- flexbox and css grid
+- Nested layout techniques
+- Css position
+- And alotttt more.
 
-<p class=Heading-1 style="font-size: 60px;">1.Html and css</p>
+How did I not forget?
+- Did constant exercises.
+## For example
+
+|                     Upload page                      |                       Css grid                           |
+| :--------------------------------------------------: | :------------------------------------------------------: |
+| ![VERT upload page](docs/images/screenshot-home.png) | ![VERT convert page](Css-flex.png) |
