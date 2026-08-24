@@ -30,6 +30,9 @@ I was only able to learn it partially due to time constraint but what did I lear
 - Jacascript basics
 - Strings and numbers
 - using html with javascript
+- functions
+- Booleans
+- DOM
 - and continuing
 
 ## And I ofcourse had to do exercises sooo
@@ -37,3 +40,8 @@ I was only able to learn it partially due to time constraint but what did I lear
 |             a cart quantity calculator               |                     A whole calculator                   |
 | :--------------------------------------------------: | :------------------------------------------------------: |
 | ![VERT upload page](images/cartquantity.png)         | ![VERT convert page](images/calculator.png)              |
+
+## End result:
+
+Built a working rock paper scissors game:
+<p align="center"><img src="images/rockpaperscissors.png"  height: 100px></p>
