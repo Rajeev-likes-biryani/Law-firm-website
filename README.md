@@ -54,4 +54,4 @@ Built a working rock paper scissors game:
 - AND the time constraint.
 -Ultimately I created MukeshKumarKhatri&Co.
 
-<p align:"center"></p>
+<p align="center"><img src="images/intro-page.png" height: 100px;</p>
