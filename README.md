@@ -15,4 +15,10 @@ How did I not forget?
 
 |                 css position pracice                 |                       Css flex practice                  |
 | :--------------------------------------------------: | :------------------------------------------------------: |
-| ![VERT upload page](images/positionabsolute.png) | ![VERT convert page](images/Css-flex.png)                |
+| ![VERT upload page](images/positionabsolute.png) | ![VERT convert page](images/Css-flex.png)                    |
+
+
+##End result:
+
+Built a copy of youtube:
+<p align="center"></p>
