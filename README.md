@@ -34,6 +34,6 @@ I was only able to learn it partially due to time constraint but what did I lear
 
 ## And I ofcourse had to do exercises sooo
 
-|                 css position pracice                 |                       Css flex practice                  |
+|             a cart quantity calculator               |                     A whole calculator                   |
 | :--------------------------------------------------: | :------------------------------------------------------: |
-| ![VERT upload page](images/positionabsolute.png) | ![VERT convert page](images/Css-flex.png)                    |
+| ![VERT upload page](images/cartquantity.png)         | ![VERT convert page](images/calculator.png)              |
