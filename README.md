@@ -52,6 +52,6 @@ Built a working rock paper scissors game:
 - The main reason I decided to copy for my first website to build confidence and to show that a single person can copy with exact precision of a team of 10 people.
 - Anyway the hardest part was everything. Had to learn animations and transition. Had to learn to use flex and grid in ways I couldn't even think of.
 - AND the time constraint.
--Ultimately I created MukeshKumarKhatri&Co.
+- Ultimately I created MukeshKumarKhatri&Co.
 
 <p align="center"><img src="images/intro-page.png" height: 100px;</p>
