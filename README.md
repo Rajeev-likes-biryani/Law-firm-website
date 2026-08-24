@@ -13,6 +13,6 @@ How did I not forget?
 - Did constant exercises.
 ## For example
 
-|                     Upload page                      |                       Css grid                           |
+|                 css position pracice                 |                       Css flex practice                  |
 | :--------------------------------------------------: | :------------------------------------------------------: |
-| ![VERT upload page](docs/images/screenshot-home.png) | ![VERT convert page](Css-flex.png) |
+| ![VERT upload page](docs/images/screenshot-home.png) | ![VERT convert page](images/Css-flex.png)                |
