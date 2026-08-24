@@ -55,3 +55,9 @@ Built a working rock paper scissors game:
 - Ultimately I created MukeshKumarKhatri&Co.
 
 <p align="center"><img src="images/intro-page.png" height: 100px;</p>
+
+## Features
+- As you scroll throughout the website you would be intrigued by the transitions and animations making it look more professional.
+- Each practice area and attorney has their own page which can accessed through the navigation bar on the top or you can also access those pages through multiple learn more links.
+- A genuine working form and make sure to fill all the details to send it.
+- Each element in the website was given custom appearance and features.
