@@ -45,3 +45,13 @@ I was only able to learn it partially due to time constraint but what did I lear
 
 Built a working rock paper scissors game:
 <p align="center"><img src="images/rockpaperscissors.png"  height: 100px></p>
+
+## Last step: Build a website on my own. 
+- Firstly a mind map.
+- Decided to copy another website for now and I know it is unorignal. However I feel like copying is also no easy task with how long each thing took.
+- The main reason I decided to copy for my first website to build confidence and to show that a single person can copy with exact precision of a team of 10 people.
+- Anyway the hardest part was everything. Had to learn animations and transition. Had to learn to use flex and grid in ways I couldn't even think of.
+- AND the time constraint.
+-Ultimately I created MukeshKumarKhatri&Co.
+
+<p align:"center"></p>
