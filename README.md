@@ -1,5 +1,8 @@
 <p align="center">The path to making a website on my own</p>
-1.) Learned Html and Css. But what did I even learn? well...
+1.) Learned Html and Css. using this video
+<p align="center"><img src="images/Screenshot 2026-08-28 144712.png" height: 100px></p>
+
+But what did I even learn? well...
 
 - Html and css basics
 - animations transitions and transformations
@@ -24,7 +27,8 @@ Built a copy of youtube:
 <p align="center"><img src="images/Youtube.png"  height: 100px></p>
 
 Then I jumped to step 2:
-Learning javascript.
+Learning javascript. used this video 
+<p align="center"><img src="images/Screenshot 2026-08-28 144816.png" height: 100px></p>
 I was only able to learn it partially due to time constraint but what did I learn?
 
 - Jacascript basics
